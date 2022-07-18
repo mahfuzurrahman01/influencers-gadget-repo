@@ -9,6 +9,18 @@ body {
 }
 
 /* article with image of a camera is the main section after nav bar and header section */
+/* article start from here  */
+.article-image {
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    padding-left: 120px;
+    padding-right: 120px;
+    margin-top: 100px;
+
+
+}
 
 
 /* heading  */
@@ -52,19 +64,6 @@ span i {
 /*----------
  span tag almost done here  ----------
  */
-
-/* article start from here  */
-.article-image {
-    width: 80%;
-    margin: 0px auto;
-    display: flex;
-    align-items: center;
-    padding-left: 120px;
-    padding-right: 120px;
-    margin-top: 100px;
-
-
-}
 
 .article {
     width: 50%;
@@ -127,7 +126,7 @@ responsive media queries
     .article-image {
         padding: 0px;
         margin-top: 60px;
-        
+
     }
 
 
@@ -146,4 +145,25 @@ responsive media queries
         width: 100%;
         margin: 30px;
     }
+}
+
+/* -------------media query is done here for article with image section  
+-------------------------------*/
+
+/* brands logos are here  */
+
+.brand-logos {
+    width: 80%;
+    height: 110px;
+    border-top: 1px solid rgb(232, 230, 230);
+    border-bottom: 1px solid rgb(232, 232, 232);
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: 89px;
 }
