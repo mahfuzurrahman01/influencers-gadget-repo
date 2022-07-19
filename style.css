@@ -9,14 +9,84 @@ body {
 
     background-color: #F1F1F1;
 }
-.see-more span{
+/* phone device responsive menubar  */
+.navbar-phone{
+    
+    display: none;
+    justify-content: space-between;
+    margin: 8px;
+    align-items: center;
+}
+.navbar-phone h2{
+    font-size: 21px;
+    font-weight: 900;
+}
+.navbar-phone span i{
+    font-size: 30px;
+    color: black;
+
+}
+
+.see-more span {
     background-color: #E02C6D;
     padding: 7px;
     color: white;
     float: right;
     display: none;
-    
+
 }
+
+/* here is our nav bar section start from */
+
+.navbar {
+    width: 80%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto;
+    border-bottom: 2px solid rgb(206, 206, 206);
+
+}
+
+.header-logo {
+    width: 50%;
+    transition: transform 0.3s;
+}
+
+.header-logo h1{
+    font-size: 40px;
+    margin-left: 50px;
+}
+
+.header-anchors {
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 40px;
+
+}
+
+.header-anchors a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: black;
+    font-weight: 500;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+/* hover effect for nav bar */
+.header-logo:hover {
+    transform: scale(1.1)
+}
+.header-anchors a:hover{
+    color: gray;
+}
+
+
+
 /* article with image of a camera is the main section after nav bar and header section */
 /* article start from here  */
 .article-image {
@@ -146,8 +216,7 @@ article with image section done here
     padding: 20px;
     height: 600px;
     margin-top: 80px;
-
-
+    box-shadow: 15px 15px 30px gray;
 }
 
 .product-image img {
@@ -269,6 +338,12 @@ responsive media queries
 -----------------------*/
 
 @media screen and (max-width: 688px) {
+     .navbar{
+        display: none;
+     }
+     .navbar-phone{
+        display: flex;
+     }
 
     .article-image {
         display: flex;
@@ -302,6 +377,7 @@ responsive media queries
         width: 100%;
         margin: 0px;
     }
+
     .brand-logos {
         width: 100%;
         display: flex;
@@ -310,58 +386,70 @@ responsive media queries
         border-top: 1px solid rgb(232, 230, 230);
         border-bottom: 1px solid rgb(232, 232, 232);
         margin: 50px auto 30px;
-        
+
     }
+
     .collection-heading {
         text-align: center;
         font-size: 25px;
         font-weight: 600;
-    
+
     }
+
     .popular-products {
-        width: 100%;
+        width: 90%;
         margin: 0 auto;
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
         justify-content: cente;
         margin-bottom: 10px;
-    
+
     }
-    .product{
+
+    .product {
         margin-top: 0px;
     }
-    .see-more span{
+
+    .see-more span {
         background-color: #E02C6D;
         padding: 7px;
         color: white;
         float: right;
         display: block;
-        
+
     }
-.footer-div{
-    display: flex;
-    flex-direction: column-reverse;
-    text-align: center;
+
+    .footer-div {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .footer-article {
+        width: 100%;
+    }
+
+    .footer-image {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .copyright-div {
+        height: 180px;
+    }
+
+    .copyright-div h1 {
+        font-size: 20px;
+    }
+
+    .copyright-div p {
+        font-size: 16px;
+    }
 }
-.footer-article{
-    width: 100%;
-}
-.footer-image{
-    margin-top: 20px;
-    width: 100%;
-}
-.copyright-div{
-    height: 180px;
-}
-.copyright-div h1{
-    font-size: 20px;
-}
-.copyright-div p{
-    font-size: 16px;
-}
-}
+
 /* for tablet devices  */
 @media screen and (min-width:689px) and (max-width: 1023px) {
+    
 
     .article-image {
         padding: 0px;
